@@ -1,9 +1,10 @@
-package com.example.sprdi;
+package com.example.sprdi.controllers;
 
-import com.example.sprdi.controllers.ConstructorInjectedController;
 import com.example.sprdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+// The most preferred method to perform dependency injection without Spring
 
 public class ConstructorInjectedControllerTest {
 
@@ -19,4 +20,5 @@ public class ConstructorInjectedControllerTest {
     void getGreeting() {
         System.out.println(controller.getGreeting());
     }
+
 }

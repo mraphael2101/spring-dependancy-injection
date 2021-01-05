@@ -8,8 +8,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class ConstructorInjectedController {
 
-    // Tells Spring to inject this object (optional for constructor injected controller method)
-    //@Autowired
+    // Tells Spring to inject this object (@Autowired is optional for constructors and is no longer required since Spring 5)
     private final GreetingService greetingService;
 
     // The qualifier lets Spring know which controller it is for
